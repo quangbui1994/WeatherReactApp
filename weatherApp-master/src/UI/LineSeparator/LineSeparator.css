@@ -1,0 +1,30 @@
+.LineSeparator {
+    font-family: inherit;
+    color: #777;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 1;
+    height: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.LineSeparator:before, .LineSeparator:after {
+    position: absolute; 
+    top: 50%;
+    content: "";
+    visibility: visible;
+    display: block;
+    height: 1px;
+    width: 37%;
+    background-color:#777;
+    z-index: 100000;
+}
+
+.LineSeparator::before {
+    left: 0;
+}
+
+.LineSeparator::after {
+    right: 0;
+}

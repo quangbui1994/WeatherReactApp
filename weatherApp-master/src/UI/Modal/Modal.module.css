@@ -1,0 +1,14 @@
+.Modal {
+    position: absolute;
+    z-index: 10;
+    width: 20%;
+    text-align: center;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(51, 51, 51, 0.493);
+    padding: 1rem 2rem;
+    border-radius: 100rem;
+    color: floralwhite;
+}
+

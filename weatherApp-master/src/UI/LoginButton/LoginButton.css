@@ -1,0 +1,92 @@
+.FacebookStyle {
+    background-color: #3b5998;
+    color: floralwhite;
+}
+
+.GoogleStyle {
+    background-color: #DD4B39;
+    color: floralwhite;
+}
+
+.GoogleStyle .login-icon-svg {
+    width: 28px !important;
+    height: 28px !important;
+    margin-top: 6px !important;
+    margin-left: 8px !important;
+}
+
+.login-btn {
+    width: 100%;
+    min-width: 184px;
+    max-width: 200px;
+    height: 42px;
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+    align-self: center;
+    user-select: none;
+    transition: all 400ms ease 0s;
+    display: flex;
+}
+.login-btn .login-icon-wrapper {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    user-select: none
+}
+.login-btn .login-icon-svg {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 11px;
+    width: 18px;
+    height: 18px;
+    user-select: none
+}
+.login-btn .btn-text {
+    float: right;
+    margin: 11px 14px 40px 40px;
+    line-height: 2rem;
+    font-size: 14px;
+    letter-spacing: .2px;
+    font-family: Roboto;
+    user-select: none;
+}
+
+.login-btn:hover {
+    box-shadow: 0 3px 8px rgba(117, 117, 117, .5);
+    user-select: none
+}
+
+.login-btn:active {
+    box-shadow: 0 1px 1px #757575;
+    background: #F8F8F8;
+    color: #fff;
+    user-select: none
+}
+
+@media (max-width: 1200px) {
+    .login-btn {
+        margin-bottom: .5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .login-btn {
+        max-width: 100rem;
+        margin-bottom: 1rem;
+    }
+
+    .login-btn .btn-text {
+        float: right;
+        margin-left: 130px;
+        font-size: 14px;
+    }
+
+    .login-btn .login-icon-wrapper {
+        margin-left: 80px;
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,28 @@
+.results-enter {
+    opacity: 0;
+}
+
+.results-enter-acitve {
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.results-enter-done {
+    transition: all 1s ease;
+    opacity: 1;
+    
+}
+
+.results-exit {
+    opacity: 1;
+}
+
+.results-exit-active {
+    transition: all .5s ease;
+    opacity: 0;
+    transition-delay: .1s !important;
+}
+
+.results-exit-done {
+    opacity: 0;
+}

@@ -1,0 +1,37 @@
+.SearchForm {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+}
+
+.toMapLink {
+    text-decoration: none;
+    color: floralwhite;
+}
+
+@media (max-width: 799px) {
+    .SearchForm {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+  .col-6-of-12 {
+    width: 100%;
+  }
+
+  .body {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .col-2-of-12 {
+    width: calc((100% - 4%) / 8);
+    margin-right: 0;
+  }
+}

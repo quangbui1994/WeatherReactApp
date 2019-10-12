@@ -1,0 +1,42 @@
+.NavigationItem {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.NavigationItem li {
+    list-style: none;
+    position: relative;
+    padding: 1rem;
+    transition: all 0.2s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.NavigationItem li:not(:last-child) {
+    margin-right: 4rem;
+}
+
+.NavigationItem a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.NavigationItem li:hover {
+    border-bottom: 2px solid rgba(250, 237, 212, 0.856);
+    color: rgba(250, 237, 212, 0.856);
+}
+
+.NavigationItem .active {
+    color: #1abc9c;
+}
+
+.forMobile {
+    display: block;
+}
+
+@media (max-width: 799px) {
+    .NavigationItem li:not(:last-child) {
+        margin-right: .5rem;
+    }
+}

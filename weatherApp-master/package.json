@@ -1,0 +1,54 @@
+{
+  "name": "weather-app",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "10.15.0",
+    "npm": "6.9.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "express": "^4.17.0",
+    "firebase": "^6.2.2",
+    "leaflet": "^1.5.1",
+    "mongoose": "^5.5.11",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^2.0.0",
+    "react": "^16.8.6",
+    "react-aux": "^1.1.0",
+    "react-dom": "^16.8.6",
+    "react-load-script": "0.0.6",
+    "react-redux": "^7.0.3",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1",
+    "react-transition-group": "^4.0.1",
+    "recompose": "^0.30.0",
+    "redux": "^4.0.1",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.3.0",
+    "typescript": "^3.4.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

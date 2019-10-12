@@ -1,0 +1,112 @@
+.WeatherResultItem {
+    width: 100%;
+    min-height: 157px;
+    display: flex;
+    flex-flow: wrap;
+    transform: all .2s ease;
+    position: relative;
+    backface-visibility: hidden;
+    border-bottom: 1px solid #fcfcfc41;
+}
+
+.forUser {
+    margin-top: 2rem;
+}
+
+.Item {
+    display: flex;
+    flex-flow: wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 2rem;
+    min-height: 157px;
+    backface-visibility: hidden;
+    perspective: 150rem;
+    transition: all .2s ease;
+}
+
+.Item:after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 100%;
+    position: absolute;
+}
+
+.Item--back {
+    transform: rotateX(0deg);
+}
+
+.Item--back--user {
+    transform: rotateX(180deg);
+}
+
+.Item--front {
+    justify-content: space-between;
+    transform: rotateX(0deg);
+    margin-top: 2rem;
+    padding-right: 10rem;
+
+}
+
+.WeatherResultItem:hover .Item--front {
+    transform: rotateX(180deg);
+}
+
+.WeatherResultItem:hover .Item--back--user{
+    transform: rotateX(0deg);
+}
+
+.temp {
+    font-size: 5rem;
+    color: floralwhite;
+}
+
+.description {
+    color: floralwhite;
+}
+
+.detailResult {
+    color: floralwhite;
+    display: flex;
+    align-items: center;
+}
+
+.resultItem {
+    text-align: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.resultItem:not(:last-child) {
+    border-right: 1px solid #999;
+}
+
+.itemInfo {
+    display: flex;
+    font-size: 1.2rem;
+    flex-flow: nowrap;
+    text-align: center;
+    justify-content: center;
+}
+
+@media (max-width: 799px) {
+    .Item {
+        display: block;
+    }
+    .WeatherResultItem {
+        min-height: 280px;
+    }
+}
+
+@media (max-width: 576px) {
+    .resultItem {
+        padding: 0 .5rem;
+    }
+}
+
+
+

@@ -1,0 +1,7 @@
+POST http://localhost:3001/api/cities
+Content-Type: application/json
+
+{
+    "cityName": "helsinki",
+    "temp": 32
+}

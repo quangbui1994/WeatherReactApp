@@ -1,0 +1,175 @@
+/*-----*/
+/*--BASIC SETUPS---*/
+/*-----*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.section {
+  margin-top: 2rem;
+}
+
+/*-----*/
+/*--GRID---*/
+/*-----*/
+
+/*--padding-right: 4%-*/
+
+.container {
+  max-width: 112rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1-of-12 {
+  width: calc((100% - 4%) / 12);
+}
+
+.col-1-of-12:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.col-2-of-12 {
+  width: calc((100% - 4%) / 6);
+  margin-right: 2rem;
+}
+
+.col-3-of-12 {
+  display: block;
+  width: calc(100% / 4);
+}
+
+.col-4-of-12 {
+  display: block;
+  width: calc(100% / 3);
+}
+
+.col-4-of-12:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.col-6-of-12 {
+  width: calc((100% - 5%) / 2);
+}
+
+.col-6-of-12:not(:last-child) {
+  margin-right: 0;
+}
+
+.col-9-of-12 {
+  display: block;
+  width: calc((100% - 4% - (100% - 16%) / 4));
+  /* margin-right: 2%; */
+}
+
+.col-10-of-12 {
+  display: block;
+  width: 75%;
+  margin-right: 2%;
+}
+
+.col-12-of-12 {
+  width: 100%;
+  margin-right: auto;
+}
+
+/*-----*/
+/*--TYPO ---*/
+/*-----*/
+
+.primary__heading {
+  text-transform: uppercase;
+  color: #1abc9c;
+  margin-bottom: 5rem;
+  font-size: 3.5rem;
+}
+
+.secondary__heading {
+  color: #1abc9c;
+  font-size: 3rem;
+  margin-bottom: .5rem;
+}
+
+.third__heading {
+  color: #999;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.third__heading--first {
+  padding-right: 0.8rem;
+}
+
+.third__heading--second {
+  font-size: 1.3rem;
+  color: #eee;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+
+  .col-4-of-12 {
+    width: calc(100% / 4);
+  }
+}
+
+@media (max-width: 799px) {
+  .col-4-of-12 {
+    width: calc(100%);
+  }
+
+  .col-6-of-12 {
+    width: calc(100%);
+  }
+
+  .col-9-of-12 {
+    display: block;
+    width: calc(100%);
+  }
+}
+
+@media (max-width: 576px) {
+  .col-6-of-12 {
+    width: 100%;
+  }
+
+  .body {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .col-2-of-12 {
+    width: calc((100% - 4%) / 8);
+    margin-right: 0;
+  }
+}

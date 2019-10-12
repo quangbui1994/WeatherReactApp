@@ -1,0 +1,15 @@
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.83)), 
+                    url('./assets/img/buildings-city-cityscape-417192.jpg');
+  background-position: top;
+  background-size: cover;
+  padding: 2rem 0;
+  padding-bottom: 5rem;
+  overflow: hidden;
+}
+
+
+
+

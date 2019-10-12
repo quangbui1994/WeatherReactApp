@@ -1,0 +1,62 @@
+.Form {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    margin-bottom: 3rem;
+}
+
+.pElement {
+    font-family: 'Open Sans';
+    text-align: center;
+    color: #fcfcfc;
+    font-size: 1.6rem;
+}
+
+.pElement:before,
+.pElement:after {
+    display: inline-block;
+    height: 1px;
+    vertical-align: middle;
+    content: "";
+    position: relative;
+    background-color: #ccc;
+    width: 37%;
+}
+
+.pElement:before {
+    right: 1rem;
+    margin-left: -50%;
+}
+
+.pElement:after {
+    left: 1rem;
+    margin-right: -50%;
+}
+
+.socialLogin {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.socialLogin a {
+    text-decoration: none;
+}
+
+.errorMessage {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+    .socialLogin {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+}
+
+.message {
+    color: #1abc9c;
+}
+

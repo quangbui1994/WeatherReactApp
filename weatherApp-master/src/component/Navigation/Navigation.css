@@ -1,0 +1,24 @@
+.Navigation {
+    width: 100%;
+    display: flex;
+    color: floralwhite;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo {
+    font-weight: 700;
+    font-size: 3.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 577px) {
+    .DesktopOnly {
+        display: none;
+    }
+
+    .Navigation {
+        padding-bottom: 3rem;
+    }
+}
+

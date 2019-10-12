@@ -1,0 +1,8 @@
+.SideNav {
+    display: block;
+    color: floralwhite;
+}
+
+.hidden {
+    visibility: hidden;
+}

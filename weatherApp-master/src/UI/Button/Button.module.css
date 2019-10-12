@@ -1,0 +1,43 @@
+.Btn {
+    font-family: inherit;
+    box-shadow: 0 .1rem .2rem rgba(0,0,0,.2);
+    cursor: pointer;
+    padding: 1rem;
+    background-color: transparent;
+    color: floralwhite;
+    margin-right: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    transition: all .2s ease;
+}
+
+.Btn:focus {
+    outline: none;
+    border: none;
+}
+
+.Btn-primary {
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    background-color: #1abc9c;
+    color: floralwhite;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    border: 1px solid #1abc9c;
+}
+
+.Btn-primary:focus {
+    border: 1px solid #1abc9c;
+}
+
+.Btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+.disabled {
+    pointer-events: none;
+    background-color: #999;
+    color: #f4f2f2;
+    border: 1px solid #999;
+}

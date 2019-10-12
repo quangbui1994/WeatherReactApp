@@ -1,0 +1,57 @@
+.Home {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.title {
+    animation: moveUp 1s ease;
+}
+
+.Link {
+    display: inline-block;
+    text-decoration: none;
+    color: #1abc9c;
+    font-weight: 300;
+    transition: all .2s ease;
+    padding-bottom: .2rem;
+    margin-top: .5rem;
+}
+
+.Link:hover {
+    transform: translateY(-2px);
+    border-bottom: 1px solid #1abc9c;
+}
+
+.result-enter {
+    opacity: 0;
+}
+
+.result-enter-active {
+    opacity: 1;
+    transition: all .5s ease;
+}
+
+.result-enter-done {
+    opacity: 1;
+}
+
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+    50% {
+        opacity: 0.8;
+        transform: translateY((0.2rem))
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 1200px) {
+    
+}
