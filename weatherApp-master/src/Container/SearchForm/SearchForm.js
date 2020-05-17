@@ -138,7 +138,7 @@ class SearchForm extends Component {
                             )
                         })
                     }
-                    <Button disabled={!this.state.formValid} btnType='Btn-primary'>See weather</Button>
+                    <Button disabled={!this.state.formValid || !this.state.searchForm.city.value.length || !this.state.searchForm.country.value.length} btnType='Btn-primary'>See weather</Button>
                     <Button btnType='Btn-primary' click={() => this.props.history.push('/map')}>Use Map</Button>
                 </form>
             </div>
@@ -154,4 +154,3 @@ const mapDispatchToProps = dispatch => {
 
 export default withRouter(connect(null, mapDispatchToProps)(SearchForm));
 
-//AIzaSyDyddX6wQCk9PY-jxHnZj_8X3M3RbzuJy4
