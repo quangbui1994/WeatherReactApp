@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "build:ui": "rm -rf build && cd ../weather-app-client && npm run build && cp -r build ../weather-app-server",
+    "build:ui": "rm -rf build && cd weatherApp-master && npm run build && cp -r build ..",
     "deploy": "git push heroku master",
     "deploy:full": "npm run build:ui && git add . && git commit -m buildui && npm run deploy",
     "logs:prod": "heroku logs --tail"
@@ -28,18 +28,20 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "compose": "^0.1.2",
-    "concurrently": "^4.1.0",
-    "core-js": "^3.1.4",
-    "dotenv": "^8.0.0",
+    "concurrently": "^4.1.2",
+    "core-js": "^3.6.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-sslify": "^1.2.0",
-    "firebase": "^6.2.2",
-    "mongoose": "^5.6.7",
+    "firebase": "^6.6.2",
+    "mongoose": "^5.9.14",
     "path": "^0.12.7",
+    "prop-types": "^15.7.2",
     "react": "^0.14.9",
+    "react-load-script": "0.0.6",
     "recompose": "^0.30.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.4"
   }
 }

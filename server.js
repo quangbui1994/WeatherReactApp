@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const City = require('./models/city');
 const enforce = require('express-sslify');
 
-mongoose.connect(config.MONGO_URI, { useNewUrlParser: true })
+mongoose.connect(config.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log('MONGO_DB connected');
     })
@@ -20,19 +20,19 @@ if (process.env.NODE_ENV === 'production') {
     app.use(enforce.HTTPS({ trustProtoHeader: true }));
 }
 
-app.use(express.static(__dirname + '/'));
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, 'build')));
-    // app.get('*', (req, res) => {
-    //   res.sendFile(path.join(__dirname, 'build', 'index.html'));
-    // });
-    app.get('*', (req,res) => {
-        res.sendFile(path.join(__dirname, '/build/index.html'));
-    });
-}
-app.use(express.static('weatherApp-master/build'));
+// app.use(express.static(__dirname + '/'));
+// if (process.env.NODE_ENV === 'production') {
+//     app.use(express.static(path.join(__dirname, 'build')));
+//     // app.get('*', (req, res) => {
+//     //   res.sendFile(path.join(__dirname, 'build', 'index.html'));
+//     // });
+//     app.get('*', (req,res) => {
+//         res.sendFile(path.join(__dirname, '/build/index.html'));
+//     });
+// }
+app.use(express.static('build'));
 app.get('*', (req,res) =>{
-    res.sendFile(path.join(__dirname, './weatherApp-master/build/index.html'));
+    res.sendFile(path.join(__dirname, 'build/index.html'));
 });
 app.use(bodyParser.json());
 
