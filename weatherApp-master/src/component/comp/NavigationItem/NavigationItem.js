@@ -4,7 +4,6 @@ import React from 'react';
 import './NavigationItem.css';
 
 const NavigationItem = (props) => {
-    console.log(props.authUser)
     let linkItem = null;
 
     if (props.authUser) {

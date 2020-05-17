@@ -43,9 +43,10 @@ class SearchForm extends Component {
     inputChangedHandler = (event, element) => {
         let value = event.target.value;
         let updatedElement = null;
+        console.log(value)
 
         if (value.length === 0) {
-            updatedElement = updatedObject(this.state.searchForm[element], { isValid: false });
+            updatedElement = updatedObject(this.state.searchForm[element], { isValid: false, value });
         } else {
             updatedElement = updatedObject(this.state.searchForm[element], { isValid: true, value });
         };
@@ -82,6 +83,7 @@ class SearchForm extends Component {
     }
 
     handleScriptLoad = () => {
+        console.log('hi')
         var options = {
           types: ['(cities)'],
         };
@@ -116,8 +118,8 @@ class SearchForm extends Component {
         return (
             <div className="row">
                 <Script
-                    url="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyddX6wQCk9PY-jxHnZj_8X3M3RbzuJy4&libraries=places&language=en"
-                    onLoad={this.handleScriptLoad}
+                    url="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmfJF90oW3AVz03mtGtldBPOW37JUaTRU&libraries=places&language=en"
+                    onLoad={this.handleScriptLoad.bind(this)}
                     />
                 <h2 className="secondary__heading">Search</h2>
                 <form className={styles.SearchForm} onSubmit={this.submitDataHandler}>
@@ -151,3 +153,5 @@ const mapDispatchToProps = dispatch => {
 }
 
 export default withRouter(connect(null, mapDispatchToProps)(SearchForm));
+
+//AIzaSyDyddX6wQCk9PY-jxHnZj_8X3M3RbzuJy4

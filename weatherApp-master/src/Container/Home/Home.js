@@ -26,7 +26,7 @@ class Home extends Component {
         return (
             <div className="Home">
                 <div className="row col-6-of-12">
-                    <h1 className="primary__heading title">Never Worry about Weather Forecast anymore</h1>
+                    <h1 className="primary__heading title">Never Worry about Weather Forecast</h1>
                 </div>
                 <SearchForm 
                     showMap={this.state.showMap} 
