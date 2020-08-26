@@ -13,6 +13,10 @@
   box-sizing: inherit;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   font-family: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 1.6rem;
